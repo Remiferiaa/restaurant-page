@@ -1,0 +1,210 @@
+:root {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(./images/promo.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.holder {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.focus {
+    padding: 24px;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 36px;
+    padding: 12px;
+    width: 100%;
+    background-color: rgba(30, 75, 75, 0.5);
+    border-bottom: 2px solid gold;
+}
+
+.pageChange {
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    color: white;
+    transition: 300ms;
+}
+
+.pageChange:hover {
+    border: 3px solid rgba(87, 81, 51, 0.4);
+}
+
+.pageChange:active{
+    transform: scale(0.95);
+}
+
+.pageChange:focus, .active {     
+    background-color:rgba(38, 135, 180, 0.4);    
+}
+
+.footer {
+    color: white;
+    border-top: 2px solid gold;
+    background-color: rgba(30, 75, 75, 0.5);
+    font-size: 0.7rem;
+    padding: 12px;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+}
+
+.homePage {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    color: white;
+}
+
+.storeName {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.description {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.openTime {
+    font-weight: bolder;
+}
+
+.foodPage {
+    padding: 24px;
+    display: grid;
+    grid-auto-rows: 7rem;
+    grid-template-columns:  15rem 15rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    grid-gap: 36px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menuName {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.menuDetail {
+    font-size: 0.7rem;
+    font-weight: lighter;
+}
+
+.food:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.infoPage {
+    width: 70vw;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    gap: 24px;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+.phone, .email, .address {
+    font-size: 2.5rem;
+    margin-bottom: 48px;
+}
+
+.phoNum, .emailAddress {
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+}
+
+.infoPage > *:hover {
+    color: rgb(216, 184, 79);
+}
+
+.source {
+    width: 100px;
+    height: 100px;
+}
+
+.logo {
+    width: 0.7rem;
+    height: 0.7rem;
+}
+
+
+@media screen and (max-width: 750px) {
+    .holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foodPage {
+        display: grid;
+        grid-auto-rows: 7rem;
+        grid-template-columns:  15rem
+    }
+}
+

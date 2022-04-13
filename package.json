@@ -1,0 +1,19 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "restaurant layout",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Remiferiaa/restaurant-page.git"
+  },
+  "author": "remiferiaa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Remiferiaa/restaurant-page/issues"
+  },
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
