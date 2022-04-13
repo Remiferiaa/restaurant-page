@@ -12,4 +12,4 @@ Made with HTML, CSS, Javascript and the use of webpack
 - Remove book when you feel like it.
 
 # Sample
-![img](images/sample.PNG)
+![img](./dist/images/sample.PNG)
